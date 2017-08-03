@@ -2,7 +2,7 @@
 
 React component for country flags (emoji & svg support).
 
-```
+```js
 import ReactCountryFlag from 'react-country-flag';
 
 # will detect Emoji support and render accordingly
