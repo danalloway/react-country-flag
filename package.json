@@ -1,6 +1,6 @@
 {
   "name": "react-country-flag",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "React component for country flags (emoji & svg support).",
   "main": "build/react-country-flag.js",
   "scripts": {
@@ -43,6 +43,6 @@
   },
   "dependencies": {
     "country-emoji": "^1.2.0",
-    "detect-emoji-support": "^0.1.1"
+    "detect-emoji-support": "^0.1.2"
   }
 }
