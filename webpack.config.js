@@ -23,7 +23,8 @@ module.exports = env => {
             }),
             new HtmlWebpackPlugin({
                 inject: true,
-                template: './index.html'
+                template: './index.html',
+                filename: 'docs/index.html'
             })
         ],
         module: {
