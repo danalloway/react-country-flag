@@ -2,6 +2,8 @@
 
 React component for country flags (emoji & svg support).
 
+[Demo](https://danalloway.github.io/react-country-flag/)
+
 ```js
 import ReactCountryFlag from 'react-country-flag';
 
