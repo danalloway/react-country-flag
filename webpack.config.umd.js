@@ -3,7 +3,6 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    devtool: 'source-map',
     entry: {
         'react-country-flag': './lib/index.js'
     },
@@ -22,10 +21,6 @@ module.exports = {
             'process.env': {
                 'NODE_ENV': JSON.stringify('production')
             }
-        }),
-        new HtmlWebpackPlugin({
-            inject: true,
-            template: './index.html'
         })
     ],
     module: {
