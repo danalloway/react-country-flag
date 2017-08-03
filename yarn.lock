@@ -1240,8 +1240,8 @@ destroy@~1.0.4:
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
 
 detect-emoji-support@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/detect-emoji-support/-/detect-emoji-support-0.1.1.tgz#5513c03fc4029e080b0b4599d3681ebdb99196e7"
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/detect-emoji-support/-/detect-emoji-support-0.1.2.tgz#b78dd01419ae308f241e361dcab6e15483142bde"
 
 detect-indent@^4.0.0:
   version "4.0.0"

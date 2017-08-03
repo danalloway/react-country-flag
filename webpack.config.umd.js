@@ -12,10 +12,11 @@ module.exports = {
         library: 'ReactCountryFlag',
         libraryTarget: 'umd',
     },
-    externals: {
-        'react': 'React',
-        'react-dom': 'ReactDOM'
-    },
+    externals: [
+        'react',
+        'react-dom',
+        'prop-types'
+    ],
     plugins: [
         new webpack.DefinePlugin({
             'process.env': {
