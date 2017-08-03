@@ -4,8 +4,9 @@
   "description": "React component for country flags (emoji & svg support).",
   "main": "build/react-country-flag.js",
   "scripts": {
-    "start": "webpack-dev-server --env development",
-    "build": "webpack --env production --progress"
+    "start": "webpack-dev-server --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.umd.js",
+    "build:demo": "webpack --config webpack.config.demo.js"
   },
   "repository": {
     "type": "git",
