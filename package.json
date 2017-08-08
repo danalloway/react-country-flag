@@ -42,7 +42,6 @@
     "react": "^15.6.1"
   },
   "dependencies": {
-    "country-emoji": "^1.2.0",
     "detect-emoji-support": "^0.1.2"
   }
 }
