@@ -13,16 +13,19 @@ npm install --save react-country-flag
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import MyComponent from 'react-country-flag'
+import ReactCountryFlag from "react-country-flag";
 
 class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
+    render() {
+        return (
+            <div>
+                <ReactCountryFlag code="us" />
+                <ReactCountryFlag code="us" svg />
+            </div>
+        );
+    }
 }
 ```
 
