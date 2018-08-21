@@ -1,7 +1,7 @@
-import ExampleComponent from './'
+import ReactCountryFlag from "./";
 
-describe('ExampleComponent', () => {
-  it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
-  })
-})
+describe("ReactCountryFlag", () => {
+    it("is truthy", () => {
+        expect(ReactCountryFlag).toBeTruthy();
+    });
+});
