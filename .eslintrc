@@ -1,0 +1,17 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["standard", "standard-react"],
+  "env": {
+    "es6": true
+  },
+  "plugins": ["react"],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": ["error", 4],
+    "space-before-function-paren": 0,
+    "react/jsx-boolean-value": 0,
+    "react/jsx-indent-props": [true, "4"]
+  }
+}
