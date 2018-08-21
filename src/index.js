@@ -18,6 +18,13 @@ export default class ReactCountryFlag extends Component {
     render() {
         const { cdnUrl, code, styleProps, svg } = this.props;
 
+        const flagUrl = `${cdnUrl}${code.toLowerCase()}.svg`;
+        const emoji = code
+            .toUpperCase()
+            .replace(/./g, char =>
+                String.fromCodePoint(char.charCodeAt(0) + 127397)
+            );
+
         return svg ? (
             <span
                 aria-label={code}
@@ -27,7 +34,7 @@ export default class ReactCountryFlag extends Component {
                     display: "inline-block",
                     width: "1.3333333333em",
                     height: "1em",
-                    backgroundImage: `url('${cdnUrl}${code.toLowerCase()}.svg')`,
+                    backgroundImage: `url(${flagUrl})`,
                     backgroundPosition: "50%",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "contain",
@@ -48,11 +55,7 @@ export default class ReactCountryFlag extends Component {
                 }}
                 title={code}
             >
-                {code
-                    .toUpperCase()
-                    .replace(/./g, char =>
-                        String.fromCodePoint(char.charCodeAt(0) + 127397)
-                    )}
+                {emoji}
             </span>
         );
     }

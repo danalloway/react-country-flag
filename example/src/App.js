@@ -17,7 +17,6 @@ export default class App extends Component {
                                 code={country.iso2_cc}
                                 flagProps={{ fontSize: "4rem" }}
                             />
-                            &nbsp;
                         </span>
                     ))}
                 </div>
@@ -31,7 +30,6 @@ export default class App extends Component {
                                 svg
                                 flagProps={{ width: "4rem", height: "3rem" }}
                             />
-                            &nbsp;
                         </span>
                     ))}
                 </div>
