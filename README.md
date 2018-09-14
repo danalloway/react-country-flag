@@ -26,7 +26,7 @@ class Example extends Component {
                 <ReactCountryFlag 
                     styleProps={{
                         width: '20px',
-                        height: '20px
+                        height: '20px'
                     }}
                     code="us"
                     svg
