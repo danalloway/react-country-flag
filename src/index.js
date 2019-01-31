@@ -11,7 +11,7 @@ export default class ReactCountryFlag extends Component {
 
     static defaultProps = {
         cdnUrl:
-            "https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/flags/4x3/",
+            "https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/flags/4x3/",
         svg: false
     };
 
