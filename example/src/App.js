@@ -15,7 +15,7 @@ export default class App extends Component {
                         >
                             <ReactCountryFlag
                                 code={country.iso2_cc}
-                                flagProps={{ fontSize: "4rem" }}
+                                styleProps={{ fontSize: "4rem" }}
                             />
                         </span>
                     ))}
@@ -28,7 +28,7 @@ export default class App extends Component {
                             <ReactCountryFlag
                                 code={country.iso2_cc}
                                 svg
-                                flagProps={{ width: "4rem", height: "3rem" }}
+                                styleProps={{ width: "4rem", height: "3rem" }}
                             />
                         </span>
                     ))}
