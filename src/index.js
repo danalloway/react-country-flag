@@ -6,7 +6,8 @@ export default class ReactCountryFlag extends Component {
         cdnUrl: PropTypes.string,
         code: PropTypes.string.isRequired,
         styleProps: PropTypes.object,
-        svg: PropTypes.bool
+        svg: PropTypes.bool,
+        title: PropTypes.string
     };
 
     static defaultProps = {
@@ -16,7 +17,7 @@ export default class ReactCountryFlag extends Component {
     };
 
     render() {
-        const { cdnUrl, code, styleProps, svg } = this.props;
+        const { cdnUrl, code, styleProps, svg, title } = this.props;
 
         const flagUrl = `${cdnUrl}${code.toLowerCase()}.svg`;
         const emoji = code
@@ -43,7 +44,7 @@ export default class ReactCountryFlag extends Component {
                     verticalAlign: "middle",
                     ...styleProps
                 }}
-                title={code}
+                title={title || code}
             />
         ) : (
             <span
