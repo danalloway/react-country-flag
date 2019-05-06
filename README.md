@@ -29,6 +29,7 @@ class Example extends Component {
                         height: '20px'
                     }}
                     code="us"
+                    withoutTitle
                     svg
                 />
             </div>
