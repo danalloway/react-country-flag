@@ -1,13 +1,15 @@
 {
-  "main.css": "/react-country-flag/static/css/main.5e913472.chunk.css",
-  "main.js": "/react-country-flag/static/js/main.d2280b5c.chunk.js",
-  "main.js.map": "/react-country-flag/static/js/main.d2280b5c.chunk.js.map",
-  "runtime~main.js": "/react-country-flag/static/js/runtime~main.11955798.js",
-  "runtime~main.js.map": "/react-country-flag/static/js/runtime~main.11955798.js.map",
-  "static/js/2.ccec2816.chunk.js": "/react-country-flag/static/js/2.ccec2816.chunk.js",
-  "static/js/2.ccec2816.chunk.js.map": "/react-country-flag/static/js/2.ccec2816.chunk.js.map",
-  "index.html": "/react-country-flag/index.html",
-  "precache-manifest.9a7eb9c5fc094f0deb67fd4aad95973b.js": "/react-country-flag/precache-manifest.9a7eb9c5fc094f0deb67fd4aad95973b.js",
-  "service-worker.js": "/react-country-flag/service-worker.js",
-  "static/css/main.5e913472.chunk.css.map": "/react-country-flag/static/css/main.5e913472.chunk.css.map"
+  "files": {
+    "main.css": "/react-country-flag/static/css/main.a2b7b0b6.chunk.css",
+    "main.js": "/react-country-flag/static/js/main.2d7b8b22.chunk.js",
+    "main.js.map": "/react-country-flag/static/js/main.2d7b8b22.chunk.js.map",
+    "runtime~main.js": "/react-country-flag/static/js/runtime~main.d9eb6250.js",
+    "runtime~main.js.map": "/react-country-flag/static/js/runtime~main.d9eb6250.js.map",
+    "static/js/2.8f0672a6.chunk.js": "/react-country-flag/static/js/2.8f0672a6.chunk.js",
+    "static/js/2.8f0672a6.chunk.js.map": "/react-country-flag/static/js/2.8f0672a6.chunk.js.map",
+    "index.html": "/react-country-flag/index.html",
+    "precache-manifest.266d784ff381af0eaac2f9737d900ea9.js": "/react-country-flag/precache-manifest.266d784ff381af0eaac2f9737d900ea9.js",
+    "service-worker.js": "/react-country-flag/service-worker.js",
+    "static/css/main.a2b7b0b6.chunk.css.map": "/react-country-flag/static/css/main.a2b7b0b6.chunk.css.map"
+  }
 }
