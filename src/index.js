@@ -19,6 +19,10 @@ export default class ReactCountryFlag extends Component {
 
     render() {
         const { cdnUrl, className, code, styleProps, svg, title } = this.props;
+        
+       if (!code) {
+            return null;
+        }
 
         const flagUrl = `${cdnUrl}${code.toLowerCase()}.svg`;
         const emoji = code
