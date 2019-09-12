@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 export default class ReactCountryFlag extends Component {
     static propTypes = {
         cdnUrl: PropTypes.string,
+        className: PropTypes.string,
         code: PropTypes.string.isRequired,
         styleProps: PropTypes.object,
         svg: PropTypes.bool,
@@ -17,7 +18,7 @@ export default class ReactCountryFlag extends Component {
     };
 
     render() {
-        const { cdnUrl, code, styleProps, svg, title } = this.props;
+        const { cdnUrl, className, code, styleProps, svg, title } = this.props;
         
        if (!code) {
             return null;
@@ -33,6 +34,7 @@ export default class ReactCountryFlag extends Component {
         return svg ? (
             <span
                 aria-label={code}
+                className={className}
                 role="img"
                 style={{
                     position: "relative",
@@ -53,6 +55,7 @@ export default class ReactCountryFlag extends Component {
         ) : (
             <span
                 aria-label={code}
+                className={className}
                 role="img"
                 style={{
                     verticalAlign: "middle",
