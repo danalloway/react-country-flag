@@ -50,7 +50,7 @@ export default class ReactCountryFlag extends Component {
                     verticalAlign: "middle",
                     ...styleProps
                 }}
-                title={title || code}
+                title={title === undefined || title === null ? code : title}
             />
         ) : (
             <span
