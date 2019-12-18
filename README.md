@@ -31,7 +31,6 @@ function ExampleComponent {
                     lineHeight: '2em',
                 }}
                 aria-label="United States"
-                title="United States"
             />
 
             <ReactCountryFlag code="US" svg />
@@ -42,6 +41,7 @@ function ExampleComponent {
                     width: '2em',
                     height: '2em',
                 }}
+                title="US"
             />
 
             <ReactCountryFlag
@@ -49,6 +49,7 @@ function ExampleComponent {
                 svg
                 cdnUrl="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/1x1/"
                 cdnSuffix="svg"
+                title="US"
             />
         </div>
     )

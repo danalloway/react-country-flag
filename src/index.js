@@ -25,7 +25,6 @@ function ReactCountryFlag({
 
         return (
             <img
-                aria-label={countryCode}
                 {...props}
                 src={flagUrl}
                 style={{
@@ -47,7 +46,6 @@ function ReactCountryFlag({
 
     return (
         <span
-            aria-label={countryCode}
             role="img"
             {...props}
             style={{
