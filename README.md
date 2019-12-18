@@ -11,6 +11,12 @@
 npm install --save react-country-flag
 ```
 
+## BREAKING CHANGES
+v2.x has breaking changes
+- `code` is now `countryCode`
+- `title` and `aria-label` are not defined any more, it is up to the developer to pass these in
+- `styleProps` is now `style`
+
 ## Usage
 
 All props are passed onto the element, everything can be overwritten.
@@ -22,10 +28,11 @@ import ReactCountryFlag from "react-country-flag"
 function ExampleComponent {
     return (
         <div>
-            <ReactCountryFlag code="US" />
+            <ReactCountryFlag countryCode="US" />
+
             <ReactCountryFlag
                 className="emojiFlag"
-                code="US"
+                countryCode="US"
                 style={{
                     fontSize: '2em',
                     lineHeight: '2em',
@@ -33,9 +40,10 @@ function ExampleComponent {
                 aria-label="United States"
             />
 
-            <ReactCountryFlag code="US" svg />
+            <ReactCountryFlag countryCode="US" svg />
+
             <ReactCountryFlag
-                code="US"
+                countryCode="US"
                 svg
                 style={{
                     width: '2em',
@@ -45,7 +53,7 @@ function ExampleComponent {
             />
 
             <ReactCountryFlag
-                code="US"
+                countryCode="US"
                 svg
                 cdnUrl="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/1x1/"
                 cdnSuffix="svg"
