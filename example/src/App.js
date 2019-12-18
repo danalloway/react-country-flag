@@ -1,13 +1,47 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'react-country-flag'
+import ReactCountryFlag from 'react-country-flag'
 
-export default class App extends Component {
-  render () {
+import countryData from './country-data'
+
+function App() {
     return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
-      </div>
+        <div>
+            <h1>Emoji's</h1>
+            <div style={{ display: 'flex', flexFlow: 'row wrap' }}>
+                {countryData.map((country) => (
+                    <ReactCountryFlag
+                        countryCode={country.iso2_cc}
+                        key={`${country.iso2_cc}_${country.e164_cc}_emoji`}
+                        style={{
+                            fontSize: '3em'
+                        }}
+                    />
+                ))}
+            </div>
+            <br />
+            <hr />
+            <h1>SVG's</h1>
+            <div style={{ display: 'flex', flexFlow: 'row wrap' }}>
+                {countryData.map((country) => (
+                    <ReactCountryFlag
+                        countryCode={country.iso2_cc}
+                        key={`${country.iso2_cc}_${country.e164_cc}_emoji`}
+                        svg
+                        style={{
+                            width: '3em',
+                            height: '3em'
+                        }}
+                    />
+                ))}
+            </div>
+            <br />
+            <hr />
+            <ReactCountryFlag countryCode="us" /> U.S.A
+            <br />
+            <ReactCountryFlag countryCode="us" svg /> U.S.A
+        </div>
     )
-  }
 }
+
+export default App

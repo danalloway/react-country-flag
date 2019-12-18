@@ -1,0 +1,23 @@
+{
+    "arrowParens": "always",
+    "proseWrap": "always",
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "trailingComma": "none",
+    "useTabs": false,
+    "overrides": [
+        {
+            "files": "*.json",
+            "options": {
+                "parser": "json"
+            }
+        },
+        {
+            "files": ".*rc",
+            "options": {
+                "parser": "json"
+            }
+        }
+    ]
+}

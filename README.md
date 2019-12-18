@@ -2,7 +2,8 @@
 
 > React component for emoji/svg country flags.
 
-[![NPM](https://img.shields.io/npm/v/react-country-flag.svg)](https://www.npmjs.com/package/react-country-flag) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-country-flag.svg)](https://www.npmjs.com/package/react-country-flag)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
@@ -12,18 +13,48 @@ npm install --save react-country-flag
 
 ## Usage
 
+All props are passed onto the element, everything can be overwritten.
+
 ```jsx
-import React, { Component } from 'react'
+import React from "react"
+import ReactCountryFlag from "react-country-flag"
 
-import MyComponent from 'react-country-flag'
-
-class Example extends Component {
-  render () {
+function ExampleComponent {
     return (
-      <MyComponent />
+        <div>
+            <ReactCountryFlag code="US" />
+            <ReactCountryFlag
+                className="emojiFlag"
+                code="US"
+                style={{
+                    fontSize: '2em',
+                    lineHeight: '2em',
+                }}
+                aria-label="United States"
+                title="United States"
+            />
+
+            <ReactCountryFlag code="US" svg />
+            <ReactCountryFlag
+                code="US"
+                svg
+                style={{
+                    width: '2em',
+                    height: '2em',
+                }}
+            />
+
+            <ReactCountryFlag
+                code="US"
+                svg
+                cdnUrl="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/1x1/"
+                cdnSuffix="svg"
+            />
+        </div>
     )
-  }
 }
+
+export default ExampleComponent
 ```
 
 ## License
