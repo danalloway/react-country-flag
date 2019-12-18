@@ -1,15 +1,6 @@
 {
-  "files": {
-    "main.css": "/react-country-flag/static/css/main.a2b7b0b6.chunk.css",
-    "main.js": "/react-country-flag/static/js/main.2d7b8b22.chunk.js",
-    "main.js.map": "/react-country-flag/static/js/main.2d7b8b22.chunk.js.map",
-    "runtime~main.js": "/react-country-flag/static/js/runtime~main.d9eb6250.js",
-    "runtime~main.js.map": "/react-country-flag/static/js/runtime~main.d9eb6250.js.map",
-    "static/js/2.8f0672a6.chunk.js": "/react-country-flag/static/js/2.8f0672a6.chunk.js",
-    "static/js/2.8f0672a6.chunk.js.map": "/react-country-flag/static/js/2.8f0672a6.chunk.js.map",
-    "index.html": "/react-country-flag/index.html",
-    "precache-manifest.266d784ff381af0eaac2f9737d900ea9.js": "/react-country-flag/precache-manifest.266d784ff381af0eaac2f9737d900ea9.js",
-    "service-worker.js": "/react-country-flag/service-worker.js",
-    "static/css/main.a2b7b0b6.chunk.css.map": "/react-country-flag/static/css/main.a2b7b0b6.chunk.css.map"
-  }
+  "main.css": "static/css/main.65027555.css",
+  "main.css.map": "static/css/main.65027555.css.map",
+  "main.js": "static/js/main.851952c0.js",
+  "main.js.map": "static/js/main.851952c0.js.map"
 }
