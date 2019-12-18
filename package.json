@@ -4,6 +4,7 @@
     "description": "React component for emoji/svg country flags.",
     "author": "danalloway",
     "license": "MIT",
+    "homepage": "https://danalloway.github.io/react-country-flag",
     "repository": "danalloway/react-country-flag",
     "main": "dist/index.js",
     "module": "dist/index.es.js",
@@ -45,7 +46,7 @@
         "eslint-plugin-promise": "^4.0.0",
         "eslint-plugin-react": "^7.17.0",
         "eslint-plugin-standard": "^3.1.0",
-        "gh-pages": "^1.2.0",
+        "gh-pages": "^2.1.1",
         "prettier": "^1.19.1",
         "react": "^16.4.1",
         "react-dom": "^16.4.1",
@@ -58,5 +59,7 @@
         "rollup-plugin-postcss": "^1.6.2",
         "rollup-plugin-url": "^1.4.0"
     },
-    "files": ["dist"]
+    "files": [
+        "dist"
+    ]
 }
