@@ -12,10 +12,13 @@ npm install --save react-country-flag
 ```
 
 ## BREAKING CHANGES
+
 v2.x has breaking changes
-- `code` is now `countryCode`
-- `title` and `aria-label` are not defined any more, it is up to the developer to pass these in
-- `styleProps` is now `style`
+
+-   `code` is now `countryCode`
+-   `title` and `aria-label` are not defined any more, it is up to the developer
+    to pass these in
+-   `styleProps` is now `style`
 
 ## Usage
 
@@ -65,6 +68,11 @@ function ExampleComponent {
 
 export default ExampleComponent
 ```
+
+# Detecting Emoji support
+
+Try this out and conditionally render your country flag
+https://github.com/danalloway/detect-emoji-support
 
 ## License
 
