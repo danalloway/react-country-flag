@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import ReactCountryFlag from 'react-country-flag'
 
@@ -11,6 +11,7 @@ function App() {
             <div style={{ display: 'flex', flexFlow: 'row wrap' }}>
                 {countryData.map((country) => (
                     <ReactCountryFlag
+                        alt={country.iso2_cc}
                         countryCode={country.iso2_cc}
                         key={`${country.iso2_cc}_${country.e164_cc}_emoji`}
                         style={{
@@ -25,6 +26,7 @@ function App() {
             <div style={{ display: 'flex', flexFlow: 'row wrap' }}>
                 {countryData.map((country) => (
                     <ReactCountryFlag
+                        alt={country.iso2_cc}
                         countryCode={country.iso2_cc}
                         key={`${country.iso2_cc}_${country.e164_cc}_emoji`}
                         svg
@@ -37,9 +39,9 @@ function App() {
             </div>
             <br />
             <hr />
-            <ReactCountryFlag countryCode="us" /> U.S.A
+            <ReactCountryFlag alt="USA" countryCode="us" /> U.S.A
             <br />
-            <ReactCountryFlag countryCode="us" svg /> U.S.A
+            <ReactCountryFlag alt="USA" countryCode="us" svg /> U.S.A
         </div>
     )
 }
