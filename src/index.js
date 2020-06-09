@@ -1,4 +1,7 @@
-import React from 'react'
+import 'react-app-polyfill/ie11'
+import 'react-app-polyfill/stable'
+
+import * as React from 'react'
 import PropTypes from 'prop-types'
 
 const DEFAULT_CDN_URL =
