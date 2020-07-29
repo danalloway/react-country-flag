@@ -16,7 +16,16 @@ type Props = {
     countryCode: string
     svg?: boolean
     style?: React.CSSProperties
-}
+} & (
+    | React.DetailedHTMLProps<
+          React.ImgHTMLAttributes<HTMLImageElement>,
+          HTMLImageElement
+      >
+    | React.DetailedHTMLProps<
+          React.HTMLAttributes<HTMLSpanElement>,
+          HTMLSpanElement
+      >
+)
 
 const ReactCountryFlag: React.StatelessComponent<Props> = ({
     cdnSuffix,
