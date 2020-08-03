@@ -14,12 +14,14 @@ export default {
         {
             file: pkg.main,
             format: 'cjs',
-            sourcemap: true
+            sourcemap: true,
+            exports: 'auto'
         },
         {
             file: pkg.module,
             format: 'es',
-            sourcemap: true
+            sourcemap: true,
+            exports: 'auto'
         }
     ],
     plugins: [
@@ -33,7 +35,9 @@ export default {
             exclude: 'node_modules/**',
             externalHelpers: true
         }),
-        resolve(),
+        resolve({
+            preferBuiltins: true
+        }),
         commonjs()
     ]
 }
