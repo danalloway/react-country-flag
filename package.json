@@ -17,7 +17,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "deploy": "gh-pages -d example/dist"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -50,6 +51,7 @@
     "@size-limit/preset-small-lib": "^7.0.3",
     "@types/react": "^17.0.35",
     "@types/react-dom": "^17.0.11",
+    "gh-pages": "^3.2.3",
     "husky": "^7.0.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
