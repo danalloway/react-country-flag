@@ -75,3 +75,5 @@ export const ReactCountryFlag = ({
     </span>
   );
 };
+
+export default ReactCountryFlag;

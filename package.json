@@ -1,5 +1,5 @@
 {
-  "version": "3.0.0",
+  "version": "3.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -18,7 +18,7 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "predeploy": "cd example && yarn && yarn build",
+    "predeploy": "yarn build && yarn --cwd ./example build",
     "deploy": "gh-pages -d example/dist"
   },
   "peerDependencies": {
