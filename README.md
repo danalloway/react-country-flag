@@ -13,6 +13,10 @@ npm install --save react-country-flag
 
 ## BREAKING CHANGES
 
+v3.x NONE
+only Typescript Types were introduced, enjoy!
+
+
 v2.x has breaking changes
 
 - `code` is now `countryCode`
