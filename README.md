@@ -4,6 +4,7 @@
 
 [![NPM](https://img.shields.io/npm/v/react-country-flag.svg)](https://www.npmjs.com/package/react-country-flag)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![danalloway/react-country-flag](https://img.shields.io/badge/Github-danalloway%2Freact--country--flag-lightgrey)](https://github.com/danalloway/react-country-flag)
 
 ## Install
 
@@ -62,7 +63,7 @@ function ExampleComponent {
             <ReactCountryFlag
                 countryCode="US"
                 svg
-                cdnUrl="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/1x1/"
+                cdnUrl="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.4/flags/1x1/"
                 cdnSuffix="svg"
                 title="US"
             />
