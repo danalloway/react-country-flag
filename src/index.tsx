@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 const DEFAULT_CDN_URL =
-  'https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.4/flags/4x3/';
+  'https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/';
 const DEFAULT_CDN_SUFFIX = 'svg';
 
 // offset between uppercase ascii and regional indicator symbols
