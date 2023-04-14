@@ -1,11 +1,15 @@
 import * as React from 'react';
 
-const DEFAULT_CDN_URL =
-  'https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/';
+const DEFAULT_CDN_URL = 'https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/';
 const DEFAULT_CDN_SUFFIX = 'svg';
 
 // offset between uppercase ascii and regional indicator symbols
 const OFFSET = 127397;
+
+const shapeMapper = {
+  rectangle: '4x3',
+  square: '1x1',
+} as const;
 
 interface EmojiProps extends React.HTMLAttributes<HTMLSpanElement> {
   cdnSuffix?: string;
@@ -13,6 +17,7 @@ interface EmojiProps extends React.HTMLAttributes<HTMLSpanElement> {
   countryCode: string;
   style?: React.CSSProperties;
   svg?: false;
+  shape?: keyof typeof shapeMapper;
 }
 
 interface ImgProps extends React.ImgHTMLAttributes<HTMLImageElement> {
@@ -21,6 +26,7 @@ interface ImgProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   countryCode: string;
   style?: React.CSSProperties;
   svg?: true;
+  shape?: keyof typeof shapeMapper;
 }
 
 export type ReactCountryFlagProps = EmojiProps | ImgProps;
@@ -31,6 +37,7 @@ export const ReactCountryFlag = ({
   countryCode,
   style,
   svg = false,
+  shape = 'rectangle',
   ...props
 }: ReactCountryFlagProps) => {
   if (typeof countryCode !== 'string') {
@@ -38,7 +45,9 @@ export const ReactCountryFlag = ({
   }
 
   if (svg) {
-    const flagUrl = `${cdnUrl}${countryCode.toLowerCase()}.${cdnSuffix}`;
+    const flagUrl = `${cdnUrl}${
+      shapeMapper[shape]
+    }/${countryCode.toLowerCase()}.${cdnSuffix}`;
 
     return (
       <img
