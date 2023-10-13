@@ -1,4 +1,6 @@
+// ISO 3166-1 alpha-2
 export enum Country {
+
 	Afghanistan = 'AF',
 	AlandIslands = 'AX',
 	Albania = 'AL',
