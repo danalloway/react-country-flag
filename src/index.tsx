@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Country } from "./countryEnum"
 
 const DEFAULT_CDN_URL =
   'https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/';
@@ -10,7 +11,7 @@ const OFFSET = 127397;
 interface EmojiProps extends React.HTMLAttributes<HTMLSpanElement> {
   cdnSuffix?: string;
   cdnUrl?: string;
-  countryCode: string;
+  countryCode: string | Country;
   style?: React.CSSProperties;
   svg?: false;
 }
